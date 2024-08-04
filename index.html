@@ -11,12 +11,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" 
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     
-    
     <script type="module" crossorigin src="/test-vite/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/test-vite/assets/index-ee929ec1.css">
+    <link rel="stylesheet" href="/test-vite/assets/index-3a1a492c.css">
   </head>
   <body>
     <header class="header-top">
@@ -25,19 +33,6 @@
       <a href="./index.html" class="header-nav-logo"
         >english<span class="header-nav-logo-excellence">excellence</span>.</a
       >
-      <button
-        class="header-button"
-        type="button"
-        onclick="openMenu()"
-        aria-label="Mobile menu button"
-      >
-        <svg class="header-button-icon-mob" width="32" height="32">
-          <use href="/test-vite/assets/icons-f0201a0e.svg#icon-menu-mob"></use>
-        </svg>
-        <svg class="header-button-icon-tab" width="32" height="32">
-          <use href="/test-vite/assets/icons-f0201a0e.svg#icon-menu-tab"></use>
-        </svg>
-      </button>
       <ul class="header-nav-list">
         <li class="header-nav-item">
           <a href="#about_us" class="header-nav-link">About us</a>
@@ -56,6 +51,11 @@
         </li>
       </ul>
     </nav>
+      <div class="header-button-icon"  onclick="openMenu()" aria-label="Mobile menu button">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
     <ul class="header-socials">
       <li class="header-socials-item">
         <a
@@ -66,7 +66,7 @@
           aria-label="Link to Facebook site"
         >
           <svg class="header-socials-icon" width="44" height="44">
-            <use href="/test-vite/assets/icons-f0201a0e.svg#icon-facebook"></use>
+            <use href="/test-vite/assets/icons-9df5383f.svg#icon-facebook"></use>
           </svg>
         </a>
       </li>
@@ -79,7 +79,7 @@
           aria-label="Link to Instagram site"
         >
           <svg class="header-socials-icon" width="44" height="44">
-            <use href="/test-vite/assets/icons-f0201a0e.svg#icon-instagram"></use>
+            <use href="/test-vite/assets/icons-9df5383f.svg#icon-instagram"></use>
           </svg>
         </a>
       </li>
@@ -92,7 +92,7 @@
           aria-label="Link to Youtube site"
         >
           <svg class="header-socials-icon" width="44" height="44">
-            <use href="/test-vite/assets/icons-f0201a0e.svg#icon-youtube"></use>
+            <use href="/test-vite/assets/icons-9df5383f.svg#icon-youtube"></use>
           </svg>
         </a>
       </li>
@@ -102,17 +102,18 @@
 
     <div id="backdrop" class="backdrop" onclick="closeMenu()">
   <div class="mobile-menu" onclick="menuLayoutClickHandler(event)">
-    <button
-      type="button"
-      onclick="closeMenu()"
-      class="menu-close-button"
-      aria-label="Open mobile menu button"
-      aria-controls="mobile-menu"
-    >
-      <svg class="menu-close-icon" width="32" height="32">
-        <use href="/test-vite/assets/icons-f0201a0e.svg#icon-x-close-mob"></use>
-      </svg>
-    </button>
+    <div class="btn-menu-wrap">
+      <button
+        type="button"
+        onclick="closeMenu()"
+        class="menu-close-button"
+        aria-label="Open mobile menu button"
+      >
+        <svg class="menu-close-icon" width="32" height="32">
+          <use href="/test-vite/assets/icons-9df5383f.svg#icon-x-close-mob"></use>
+        </svg>
+      </button>
+    </div>
     <ul class="menu-items">
       <li class="menu-item" onclick="closeMenu()">
         <a href="#about_us">About us</a>
@@ -140,7 +141,7 @@
           aria-label="Link to Facebook"
         >
           <svg class="social-icon" width="26" height="26">
-            <use href="/test-vite/assets/icons-f0201a0e.svg#icon-facebook"></use>
+            <use href="/test-vite/assets/icons-9df5383f.svg#icon-facebook"></use>
           </svg>
         </a>
       </li>
@@ -152,7 +153,7 @@
           aria-label="Link to Instagram"
         >
           <svg class="social-icon" width="26" height="26">
-            <use href="/test-vite/assets/icons-f0201a0e.svg#icon-instagram"></use>
+            <use href="/test-vite/assets/icons-9df5383f.svg#icon-instagram"></use>
           </svg>
         </a>
       </li>
@@ -164,7 +165,7 @@
           aria-label="Link to Youtube"
         >
           <svg class="social-icon" width="26" height="26">
-            <use href="/test-vite/assets/icons-f0201a0e.svg#icon-youtube"></use>
+            <use href="/test-vite/assets/icons-9df5383f.svg#icon-youtube"></use>
           </svg>
         </a>
       </li>
@@ -186,7 +187,7 @@
       >
       <a class="hero-scroll-btn" href="#footer">
         <svg class="hero-scroll-img" viewBox="0 0 10 8" width="24">
-          <use href="/test-vite/assets/icons-f0201a0e.svg#icon-scroll-down"></use>
+          <use href="/test-vite/assets/icons-9df5383f.svg#icon-scroll-down"></use>
         </svg>
       </a>
     </div>
@@ -195,8 +196,8 @@
 
       <section class="about">
   <div class="container" id="about_us">
-    <h2 class="about-heading">About <span class="about-word">us</span></h2>
-    <p class="about-description">
+    <h2 class="section-heading">About <span class="underlined-word">Us</span></h2>
+    <p class="section-description">
       We are dedicated to providing engaging and effective English language
       courses in a supportive and stimulating learning environment
     </p>
@@ -247,13 +248,7 @@
   </div>
 </section>
 
-      <!--
-  - Текст “Our lessons” є заголовком секції.
-  - У секції знаходиться перелік пакетних планів компанії, який необхідно реалізувати як список елементів за допомогою <ul>.
-  - Якірне посилання "Leave an application" має вести до секції "Leave an application"
--->
-
-<section class="lessons">
+      <section class="lessons">
   <div class="container">
     <h2 class="section-heading" id="lessons">
       Our <span class="underlined-word">lessons</span>
@@ -309,12 +304,12 @@
 
         <div class="leave-app-card-stack">
           <div class="leave-app-stack-front">
-            <h2 class="leave-app-stack-heading">Power of English</h2>
+            <h3 class="leave-app-stack-heading">Power of English</h3>
             <ul class="leave-app-card-list">
               <li class="leave-app-card-list-item">
                 <div class="leave-app-card-round-icon">
                   <svg class="leave-app-card-check" viewBox="0 0 10 8">
-                    <use href="/test-vite/assets/icons-f0201a0e.svg#icon-check-for-list"></use>
+                    <use href="/test-vite/assets/icons-9df5383f.svg#icon-check-for-list"></use>
                   </svg>
                 </div>
                 <p class="leave-app-card-list-text">
@@ -326,7 +321,7 @@
               <li class="leave-app-card-list-item">
                 <div class="leave-app-card-round-icon">
                   <svg class="leave-app-card-check" viewBox="0 0 10 8">
-                    <use  href="/test-vite/assets/icons-f0201a0e.svg#icon-check-for-list"></use>
+                    <use  href="/test-vite/assets/icons-9df5383f.svg#icon-check-for-list"></use>
                   </svg>
                 </div>
                 <p class="leave-app-card-list-text">
@@ -338,7 +333,7 @@
               <li class="leave-app-card-list-item">
                 <div class="leave-app-card-round-icon">
                   <svg class="leave-app-card-check" viewBox="0 0 10 8">
-                    <use href="/test-vite/assets/icons-f0201a0e.svg#icon-check-for-list"></use>
+                    <use href="/test-vite/assets/icons-9df5383f.svg#icon-check-for-list"></use>
                   </svg>
                 </div>
                 <p class="leave-app-card-list-text">
@@ -349,83 +344,168 @@
               </li>
             </ul>
             <a class="leave-app-card-btn btn-transition" href="#contact">Leave an application</a>
-            <img class="img-books mobile-hidden" src="/test-vite/assets/books-stack-6e1a739a.png" alt="Tall stack of books" />
+            <picture>
+              <source
+                srcset="/test-vite/assets/books-stack@1x-2b80bb9a.webp 1x, /test-vite/assets/books-stack@2x-1f7580f3.webp 2x"
+                type="image/webp"
+              />
+              <source
+                srcset="/test-vite/assets/books-stack@1x-41061f19.png 1x, /test-vite/assets/books-stack@2x-6282c11b.png 2x"
+                type="image/png"
+              />
+              <img
+                class="img-books mobile-hidden"
+                src="/test-vite/assets/books-stack@1x-41061f19.png"
+                alt="Tall stack of books"
+                width="214"
+                height="263"
+                loading="lazy"
+              />
+            </picture>
           </div>
         </div>
       </div>
   </section>
       <section class="teachers">
-    <div class="teachers-container container" >
-      <h2 class="teachers-header" id="teachers">Meet our <span class="teachers-word">teachers</span></h2>
-      <p class="teachers-abovetext">Discover our team of dedicated educators, committed to guiding you on your journey to English proficiency with personalized and engaging instruction</p>
-      <ul class="teachers-list">
-        <li class="teachers-item">
-          <img 
-          class="teachers-image" 
-          srcset="/test-vite/assets/teacher-maria@1x-a2980da0.jpg 1x, /test-vite/assets/teacher-maria@2x-342e4eef.jpg 2x"
-          src="/test-vite/assets/teacher-maria@1x-a2980da0.jpg"
-          alt="Image of the first teacher"
-          width="150"
-          height="150">
-          <div class="teachers-description">
-            <h3 class="teachers-name">Maria</h3>
-            <p class="teachers-undertext">A seasoned linguist and our primary specialist in beginner-level instruction, Maria brings warmth and patience to every class</p>
-          </div> 
-        </li>
-        <li class="teachers-item">
-          <img 
-          class="teachers-image" 
-          srcset="/test-vite/assets/teacher-artem@1x-3b6ce03d.jpg 1x, /test-vite/assets/teacher-artem@2x-1fb32b5b.jpg 2x"
-          src="/test-vite/assets/teacher-artem@1x-3b6ce03d.jpg"
-          alt="Image of the second teacher"
-          width="150"
-          height="150">
-          <div class="teachers-description">
-            <h3 class="teachers-name">Artem</h3>
-            <p class="teachers-undertext">With his innovative teaching techniques and a focus on interactive learning, Artem excels in keeping students engaged and motivated</p>
-          </div> 
-        </li>
-        <li class="teachers-item">
-          <img 
-          class="teachers-image" 
-          srcset="/test-vite/assets/teacher-ilona@1x-ee57d859.jpg 1x, /test-vite/assets/teacher-ilona@2x-45192ba5.jpg 2x"
-          src="/test-vite/assets/teacher-ilona@1x-ee57d859.jpg"
-          alt="Image of the third teacher"
-          width="150"
-          height="150">
-          <div class="teachers-description">
-            <h3 class="teachers-name">Ilona</h3>
-            <p class="teachers-undertext">A specialist in advanced English, Ilona provides intensive instruction, ensuring students gain confidence in complex language tasks</p>
-          </div> 
-        </li>
-        <li class="teachers-item">
-          <img 
-          class="teachers-image" 
-          srcset="/test-vite/assets/teacher-volodymyr@1x-dcf1c14f.jpg 1x, /test-vite/assets/teacher-volodymyr@2x-d1d81b31.jpg 2x"
-          src="/test-vite/assets/teacher-volodymyr@1x-dcf1c14f.jpg"
-          alt="Image of the fourth teacher"
-          width="150"
-          height="150">
-          <div class="teachers-description">
-            <h3 class="teachers-name">Volodymyr</h3>
-            <p class="teachers-undertext">Our expert in English for specific purposes, Volodymyr tailors his approach to meet individual career and
-            industry-specific language needs</p>
-          </div> 
-        </li>
-      </ul>
-    </div>
-  </section>
+  <div class="teachers-container container">
+    <h2 class="section-heading" id="teachers">
+      Meet our <span class="underlined-word">teachers</span>
+    </h2>
+    <p class="section-description">
+      Discover our team of dedicated educators, committed to guiding you on your
+      journey to English proficiency with personalized and engaging instruction
+    </p>
+    <ul class="teachers-list">
+      <li class="teachers-item">
+        <picture>
+          <source
+            srcset="/test-vite/assets/teacher-maria@1x-eef7cf26.webp 1x, /test-vite/assets/teacher-maria@2x-2f24f2dd.webp 2x"
+            type="image/webp"
+          />
+          <source
+            srcset="/test-vite/assets/teacher-maria@1x-a2980da0.jpg 1x, /test-vite/assets/teacher-maria@2x-342e4eef.jpg 2x"
+            type="image/jpg"
+          />
+          <img
+            class="teachers-image"
+            srcset="/test-vite/assets/teacher-maria@1x-a2980da0.jpg 1x, /test-vite/assets/teacher-maria@2x-342e4eef.jpg 2x"
+            src="/test-vite/assets/teacher-maria@1x-a2980da0.jpg"
+            alt="Image of the first teacher"
+            width="150"
+            height="150"
+            loading="lazy"
+          />
+        </picture>
+        <div class="teachers-description">
+          <h3 class="teachers-name">Maria</h3>
+          <p class="teachers-undertext">
+            A seasoned linguist and our primary specialist in beginner-level
+            instruction, Maria brings warmth and patience to every class
+          </p>
+        </div>
+      </li>
+      <li class="teachers-item">
+        <picture>
+          <source
+            srcset="/test-vite/assets/teacher-artem@1x-0b62c8b1.webp 1x, /test-vite/assets/teacher-artem@2x-ffe8f24a.webp 2x"
+            type="image/webp"
+          />
+          <source
+            srcset="/test-vite/assets/teacher-artem@1x-3b6ce03d.jpg 1x, /test-vite/assets/teacher-artem@2x-1fb32b5b.jpg 2x"
+            type="image/jpg"
+          />
+          <img
+            class="teachers-image"
+            srcset="/test-vite/assets/teacher-artem@1x-3b6ce03d.jpg 1x, /test-vite/assets/teacher-artem@2x-1fb32b5b.jpg 2x"
+            src="/test-vite/assets/teacher-artem@1x-3b6ce03d.jpg"
+            alt="Image of the second teacher"
+            width="150"
+            height="150"
+            loading="lazy"
+          />
+        </picture>
+        <div class="teachers-description">
+          <h3 class="teachers-name">Artem</h3>
+          <p class="teachers-undertext">
+            With his innovative teaching techniques and a focus on interactive
+            learning, Artem excels in keeping students engaged and motivated
+          </p>
+        </div>
+      </li>
+      <li class="teachers-item">
+        <picture>
+          <source
+            srcset="/test-vite/assets/teacher-ilona@1x-e3bcddd0.webp 1x, /test-vite/assets/teacher-ilona@2x-b9e261e2.webp 2x"
+            type="image/webp"
+          />
+          <source
+            srcset="/test-vite/assets/teacher-ilona@1x-ee57d859.jpg 1x, /test-vite/assets/teacher-ilona@2x-45192ba5.jpg 2x"
+            type="image/jpg"
+          />
+          <img
+            class="teachers-image"
+            srcset="/test-vite/assets/teacher-ilona@1x-ee57d859.jpg 1x, /test-vite/assets/teacher-ilona@2x-45192ba5.jpg 2x"
+            src="/test-vite/assets/teacher-ilona@1x-ee57d859.jpg"
+            alt="Image of the third teacher"
+            width="150"
+            height="150"
+            loading="lazy"
+          />
+        </picture>
+        <div class="teachers-description">
+          <h3 class="teachers-name">Ilona</h3>
+          <p class="teachers-undertext">
+            A specialist in advanced English, Ilona provides intensive
+            instruction, ensuring students gain confidence in complex language
+            tasks
+          </p>
+        </div>
+      </li>
+      <li class="teachers-item">
+        <picture>
+          <source
+            srcset="/test-vite/assets/teacher-volodymyr@1x-48ec63d3.webp 1x, /test-vite/assets/teacher-volodymyr@2x-60e4415c.webp 2x"
+            type="image/webp"
+          />
+          <source
+            srcset="/test-vite/assets/teacher-volodymyr@1x-dcf1c14f.jpg 1x, /test-vite/assets/teacher-volodymyr@2x-d1d81b31.jpg 2x"
+            type="image/jpg"
+          />
+          <img
+            class="teachers-image"
+            srcset="/test-vite/assets/teacher-volodymyr@1x-dcf1c14f.jpg 1x, /test-vite/assets/teacher-volodymyr@2x-d1d81b31.jpg 2x"
+            src="/test-vite/assets/teacher-volodymyr@1x-dcf1c14f.jpg"
+            alt="Image of the fourth teacher"
+            width="150"
+            height="150"
+            loading="lazy"
+          />
+        </picture>
+        <div class="teachers-description">
+          <h3 class="teachers-name">Volodymyr</h3>
+          <p class="teachers-undertext">
+            Our expert in English for specific purposes, Volodymyr tailors his
+            approach to meet individual career and industry-specific language
+            needs
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
       <section class="form">
   <div class="container" id="contact">
 
-    <h2 class="app-heading">Leave an <span class="lessons-word">application</span></h2>
-    <p class="under-heading-txt">Please use the form below to contact us. Enter your name, email, and message and we'll
+    <h2 class="section-heading">Leave an <span class="underlined-word">application</span></h2>
+    <p class="section-description">Please use the form below to contact us. Enter your name, email, and message and we'll
       get back to you shortly</p>
 
     <div class="form-app-blocks">
 
       <div class="block-form-app-info">
         <picture class="form-app-info-image">
+          <source media="(min-width: 1280px)" srcset="/test-vite/assets/girl-4856d783.webp 1x, /test-vite/assets/girl@2x-936b78a1.webp 2x" type="image/webp" />
           <source media="(min-width: 1280px)" srcset="/test-vite/assets/girl-7a739a45.png 1x, /test-vite/assets/girl@2x-b1b6394b.png 2x"
             type="image/png" />
           <img srcset="/test-vite/assets/girl-7a739a45.png 1x, /test-vite/assets/girl@2x-b1b6394b.png 2x" src="/test-vite/assets/girl-7a739a45.png"
@@ -440,10 +520,8 @@
 
       <div class="block-form-app">
 
-        <script type="text/javascript"> var submitted=false</script> <!-- 1 line script code here better than 10 line code in js file -->
-
         <iframe name="iframeHiddenConfirm" id="iframeHiddenConfirm" style=" display: none;" onload="if(submitted){showPopup();}"></iframe>
-   
+
         <form class="form-app" name="contact" action="https://docs.google.com/forms/d/e/1FAIpQLSfqlIsduccQZVhHaxQbD9rRpnthWNtsvATIvVq4UZNSoHveIg/formResponse" method="post" target="iframeHiddenConfirm" onsubmit="submitted=true">
 
           <fieldset class="form-app-fieldset-fields">
@@ -487,7 +565,7 @@
                 <input class="visually-hidden" type="radio" name="entry.846394020" value="Maria" id="maria" checked>
                 <span class="circle-radio-button">
                   <svg class="circle-radio-button-icon" width="10" height="10">
-                    <use href="/test-vite/assets/icons-f0201a0e.svg#icon-circle-for-radio-button"></use>
+                    <use href="/test-vite/assets/icons-9df5383f.svg#icon-circle-for-radio-button"></use>
                   </svg>
                 </span>
                 Maria
@@ -497,7 +575,7 @@
                 <input class="visually-hidden" type="radio" name="entry.846394020" value="Artem">
                 <span class="circle-radio-button">
                   <svg class="circle-radio-button-icon" width="10" height="10">
-                    <use href="/test-vite/assets/icons-f0201a0e.svg#icon-circle-for-radio-button"></use>
+                    <use href="/test-vite/assets/icons-9df5383f.svg#icon-circle-for-radio-button"></use>
                   </svg>
                 </span>
                 Artem
@@ -507,7 +585,7 @@
                 <input class="visually-hidden" type="radio" name="entry.846394020" value="Ilona">
                 <span class="circle-radio-button">
                   <svg class="circle-radio-button-icon" width="10" height="10">
-                    <use href="/test-vite/assets/icons-f0201a0e.svg#icon-circle-for-radio-button"></use>
+                    <use href="/test-vite/assets/icons-9df5383f.svg#icon-circle-for-radio-button"></use>
                   </svg>
                 </span>
                 Ilona
@@ -517,7 +595,7 @@
                 <input class="visually-hidden" type="radio" name="entry.846394020" value="Volodymyr">
                 <span class="circle-radio-button">
                   <svg class="circle-radio-button-icon" width="10" height="10">
-                    <use href="/test-vite/assets/icons-f0201a0e.svg#icon-circle-for-radio-button"></use>
+                    <use href="/test-vite/assets/icons-9df5383f.svg#icon-circle-for-radio-button"></use>
                   </svg>
                 </span>
                 Volodymyr
@@ -542,25 +620,28 @@
 
 <div id="popup" class="popup">
     <div class="popup-content">
-        <p>You Are AWESOME!!! </p>
-        <p>We Will Call You!!!</p>
-        <p>Thank You And Have A GOOD DAY!!!</p>
+      <p>You Are AWESOME!!!</p>
+      <p>We will call You!!</p>
+      <br>
+      <p>Thank You And Have A GOOD DAY!!!</p>
+      <br>
         <button onclick="closePopup()">Press A GooD Day!</button>
     </div>
 </div>
 
-        <section class="reviews">
-    <div class="container container-review">
-      <h2 class="reviews-title" id="reviews">
-        What our <span class="lessons-word">students</span> say
-      </h2>
-      <p class="introduction">
-        Hear from our students about their learning journey with us, as they
-        share their experiences, progress, and the transformative impact
-      </p>
+      <section class="reviews">
+  <div class="container container-review">
+    <h2 class="section-heading" id="reviews">
+      What our <span class="underlined-word">students</span> say
+    </h2>
+    <p class="section-description">
+      Hear from our students about their learning journey with us, as they share
+      their experiences, progress, and the transformative impact
+    </p>
 
-      <ul class="cards">
-        <li class="card">
+    <div class="swiper">
+      <ul class="cards swiper-wrapper">
+        <li class="card swiper-slide">
           <div class="green-top">
             <picture>
               <source
@@ -577,9 +658,8 @@
                 width="50"
                 height="50"
                 loading="lazy"
-               />
+              />
             </picture>
-
             <div class="green-top-text">
               <p class="name">Anna</p>
               <p class="student">Student</p>
@@ -588,13 +668,12 @@
           <div class="review-text">
             <p>
               My experience at the language school has been nothing short of
-              amazing. The teachers are dedicated and the learning environment
-              is stimulating. I feel more confident in my English skills.
+              amazing. The teachers are dedicated and the learning environment is
+              stimulating. I feel more confident in my English skills.
             </p>
           </div>
         </li>
-
-        <li class="card hidden">
+        <li class="card swiper-slide">
           <div class="green-top">
             <picture>
               <source
@@ -621,12 +700,12 @@
           <div class="review-text">
             <p>
               The school offers a great balance of language theory and practical
-              exercises. The personalized feedback from the teachers has helped
-              me improve my weak areas.
+              exercises. The personalized feedback from the teachers has helped me
+              improve my weak areas.
             </p>
           </div>
         </li>
-        <li class="card hidden">
+        <li class="card swiper-slide">
           <div class="green-top">
             <picture>
               <source
@@ -652,20 +731,21 @@
           </div>
           <div class="review-text">
             <p>
-              I love the dynamic and interactive teaching methods used here.
-              It's a great place to learn English in a fun and effective way. I
-              have definitely seen a big improvement in my language skills.
+              I love the dynamic and interactive teaching methods used here. It's
+              a great place to learn English in a fun and effective way. I have
+              definitely seen a big improvement in my language skills.
             </p>
           </div>
         </li>
       </ul>
+
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
-  </section>
-</html>
-
-
-
-
+  </div>
+</section>
 
     </main>
 
@@ -673,7 +753,7 @@
     <div class="container footer-container" id="footer">
         <div class="footer-content">
             <div class="footer-logo-address-block">
-                <a href="./index.html" class="footer-logo-link">english<span class="footer-logo-color">excellence</span></a>
+                <a href="./index.html" class="footer-logo-link">english<span class="footer-logo-color">excellence</span>.</a>
                 <address>
                     <ul class="footer-list">
                         <li class="footer-item">
@@ -690,7 +770,7 @@
             
                 <nav>
                     <ul class="footer-nav-list">
-                        <li class="footer-nav-item"><a href="#history">About us</a></li>
+                        <li class="footer-nav-item"><a href="#about_us">About us</a></li>
                         <li class="footer-nav-item"><a href="#lessons">Our lessons</a></li>
                         <li class="footer-nav-item"><a href="#teachers">Teachers</a></li>
                         <li class="footer-nav-item"><a href="#reviews">Reviews</a></li>
@@ -703,21 +783,21 @@
                     <li class="footer-social-link">
                         <a class="footer-icon" href="https://www.facebook.com/goITclub/" target="_blank" aria-label="Facebook">
                             <svg class="footer-svg" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true">
-                                <use x="0" y="0" href="/test-vite/assets/icons-f0201a0e.svg#icon-facebook"></use>
+                                <use x="0" y="0" href="/test-vite/assets/icons-9df5383f.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="footer-social-link">
                         <a class="footer-icon" href="https://www.instagram.com/goitclub/" target="_blank" aria-label="Instagram">
                             <svg class="footer-svg" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true">
-                                <use x="0" y="0" href="/test-vite/assets/icons-f0201a0e.svg#icon-instagram"></use>
+                                <use x="0" y="0" href="/test-vite/assets/icons-9df5383f.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="footer-social-link">
                         <a class="footer-icon" href="https://www.youtube.com/c/GoIT" target="_blank" aria-label="YouTube">
                             <svg class="footer-svg" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true">
-                                <use x="0" y="0" href="/test-vite/assets/icons-f0201a0e.svg#icon-youtube"></use>
+                                <use x="0" y="0" href="/test-vite/assets/icons-9df5383f.svg#icon-youtube"></use>
                             </svg>
                         </a>
                     </li>
@@ -734,8 +814,9 @@
     </div>
 </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     
-    <!-- <script src="./js/popup.js"></script> -->
 
+    
   </body>
 </html>
